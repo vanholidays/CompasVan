@@ -1,0 +1,21 @@
+name: compasvan
+description: Application mobile participative pour voyageurs en van (bivouacs, recettes, randos...).
+publish_to: "none"
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.10.0
+  cloud_firestore: ^4.8.0
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
