@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399074259958",
+    "project_id": "compasvan",
+    "storage_bucket": "compasvan.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399074259958:android:51c7dad4527c63af098dd7",
+        "android_client_info": {
+          "package_name": "com.compasvan.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXrZ9SPfC6sti7GFDhvnPMH8NHhAwSMpA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
