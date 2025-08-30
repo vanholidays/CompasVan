@@ -5,11 +5,12 @@ workflows:
     environment:
       flutter: stable
       xcode: latest
-      cache:
-        cache_default: false   # désactive le cache pour forcer un build propre
     scripts:
       - name: Get dependencies
         script: flutter pub get
+
+      - name: Clean build
+        script: flutter clean
 
       - name: Build Android APK
         script: flutter build apk --release
