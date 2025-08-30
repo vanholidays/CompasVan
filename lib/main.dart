@@ -1,37 +1,44 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
-import 'screens/home.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  runApp(const CompasVanApp());
+void main() {
+  runApp(const MyApp());
 }
 
-class CompasVanApp extends StatelessWidget {
-  const CompasVanApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'CompasVan',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const MyHomePage(),
+      // ✅ Partie corrigée : ajout des localisations avec const
       localizationsDelegates: const [
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [
-        Locale('fr', ''),
-        Locale('en', ''),
-        Locale('nl', ''),
-        Locale('de', ''),
-        Locale('es', ''),
+        Locale('en'), // Anglais
+        Locale('fr'), // Français
       ],
-      home: const HomeScreen(),
+    );
+  }
+}
+
+class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Center(
+        child: Text('Bienvenue dans CompasVan 🚐'),
+      ),
     );
   }
 }
