@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildSystemType</key>
+	<string>Original</string>
+	<key>LastUpgradeCheck</key>
+	<string>1430</string>
+	<key>ORGANIZATION_NAME</key>
+	<string>CompasVan</string>
+	<key>SDKROOT</key>
+	<string>iphoneos</string>
+	<key>SUPPORTED_PLATFORMS</key>
+	<array>
+		<string>iphonesimulator</string>
+		<string>iphoneos</string>
+	</array>
+	<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+	<string>12.0</string>
+</dict>
+</plist>
