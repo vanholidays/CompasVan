@@ -1,34 +1,52 @@
-**/dgph
-*.mode1v3
-*.mode2v3
-*.moved-aside
-*.pbxuser
-*.perspectivev3
-**/*sync/
-.sconsign.dblite
-.tags*
-**/.vagrant/
-**/DerivedData/
-Icon?
-**/Pods/
-**/.symlinks/
-profile
-xcuserdata
-**/.generated/
-Flutter/App.framework
-Flutter/Flutter.framework
-Flutter/Flutter.podspec
-Flutter/Generated.xcconfig
-Flutter/ephemeral/
-Flutter/app.flx
-Flutter/app.zip
-Flutter/flutter_assets/
-Flutter/flutter_export_environment.sh
-ServiceDefinitions.json
-Runner/GeneratedPluginRegistrant.*
+# Flutter/Dart/Pub
+.dart_tool/
+.packages
+.pub/
+build/
+flutter_export_environment.sh
+Generated.xcconfig
+Generated.xcsettings
 
-# Exceptions to above rules.
-!default.mode1v3
-!default.mode2v3
-!default.pbxuser
-!default.perspectivev3
+# IntelliJ / VS Code
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# Android
+.gradle/
+local.properties
+**/android/**/gradlew
+**/android/**/gradlew.bat
+**/android/**/gradle-wrapper.jar
+**/android/**/gradle-wrapper.properties
+**/android/**/build/
+
+# iOS
+Pods/
+Podfile.lock
+ios/Flutter/.last_build_id
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/DerivedData/
+ios/Runner.xcworkspace/xcuserdata/
+ios/Runner.xcodeproj/xcuserdata/
+
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcuserdatad
+*.moved-aside
+
+# Firebase / Config
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+
+# Misc
+*.log
+*.tmp
+*.swp
+*.DS_Store

@@ -1,5 +1,5 @@
 name: compasvan
-description: A new Flutter project for CompasVan
+description: Flutter app for CompasVan
 publish_to: "none"
 
 version: 1.0.0+1
@@ -11,7 +11,7 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # Localisations Flutter (corrige ton bug actuel)
+  # Localisations Flutter (nécessaire pour intl et traductions)
   flutter_localizations:
     sdk: flutter
 
